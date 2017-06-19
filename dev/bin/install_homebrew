@@ -219,3 +219,9 @@ brew install etcd
 #envsubst
 brew install gettext
 #envsubst='/usr/local/Cellar/gettext/0.19.6/bin/envsubst
+
+#Gradle
+brew install gradle
+
+#Maven
+brew install maven
