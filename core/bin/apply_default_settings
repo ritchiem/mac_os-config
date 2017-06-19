@@ -256,6 +256,10 @@ defaults write -g com.apple.keyboard.fnState -bool true
 printf "Set Darkula theme (Requires Root)\n"
 #sudo defaults write /Library/Preferences/.GlobalPreferences.plist _HIEnableThemeSwitchHotKey -bool true
 
+#
+# Stop spaces re-aranging. Need to automate the Mission Control Setting
+# http://osxdaily.com/2011/11/12/stop-spaces-rearranging-mac-os-x/
+#
 
 #
 # App Store .. install macOS updates
