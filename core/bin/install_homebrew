@@ -1,0 +1,50 @@
+#! /usr/bin/env bash
+
+# DESCRIPTION
+# Installs Homebrew software.
+
+# EXECUTION
+# Homebrew
+if ! command -v brew > /dev/null; then
+  ruby -e "$(curl --location --fail --silent --show-error https://raw.githubusercontent.com/Homebrew/install/master/install)"
+  export PATH="/usr/local/bin:$PATH"
+  printf "export PATH=\"/usr/local/bin:$PATH\"\n" >> $HOME/.bash_profile
+fi
+
+# Readline
+brew install readline
+
+# OpenSSL
+brew install openssl
+
+# OpenSSL OSX CA
+brew tap raggi/ale
+brew install openssl-osx-ca
+
+# Bash
+brew install bash
+
+# Bash Completion
+brew install bash-completion
+
+# Git
+brew install git
+
+# Mac App Store CLI
+brew install mas
+
+# Tree
+brew install tree
+
+# Vim
+brew install vim
+
+# Mercurial
+brew install hg
+
+# sshuttle
+brew install sshuttle
+
+#wget
+brew install wget
+

@@ -6,6 +6,11 @@
 # SETUP
 
 # EXECUTION
+
+# Only install extensions if we've actually installed the app.
+local install_path=$(get_install_path "$SUBLIME_TEXT_APP_NAME")
+if [[ ! -e "$install_path" ]]; then
+
 # Sublime Text - Advanced New File
 install_git_app "$ADVANCED_NEW_FILE_EXTENSION_URL" "$ADVANCED_NEW_FILE_EXTENSION_PATH"
 
@@ -120,6 +125,11 @@ install_git_app "$WEB_INSPECTOR_EXTENSION_URL" "$WEB_INSPECTOR_EXTENSION_PATH"
 # Sublime Text - WrapPlus
 install_git_app "$WRAP_PLUS_EXTENSION_URL" "$WRAP_PLUS_EXTENSION_PATH"
 
+fi
+
+# Only install extensions if we've actually installed the app.
+if [[ ! -e "/usr/local/bin/vim" ]]; then
+
 # Vim - Bundler
 install_git_app "$VIM_BUNDLER_EXTENSION_URL" "$VIM_BUNDLER_EXTENSION_PATH"
 
@@ -149,3 +159,5 @@ install_git_app "$VIM_TEXT_OBJECT_RUBY_BLOCK_EXTENSION_URL" "$VIM_TEXT_OBJECT_RU
 
 # Vim - Unimpaired
 install_git_app "$VIM_UNIMPAIRED_EXTENSION_URL" "$VIM_UNIMPAIRED_EXTENSION_PATH"
+
+fi

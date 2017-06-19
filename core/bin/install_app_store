@@ -1,0 +1,21 @@
+#! /usr/bin/env bash
+
+# DESCRIPTION
+# Installs App Store software.
+
+# EXECUTION
+# Homebrew
+if ! command -v mas > /dev/null; then
+  printf "ERROR: Mac App Store CLI (mas) can't be found.\n"
+  printf "       Please ensure Homebrew and mas (i.e. brew install mas) have been installed first."
+  exit 1
+fi
+
+# Slack
+mas install 803453959
+
+# 1Password
+#mas install 443987910
+
+# DaisyDisk
+mas install 411643860

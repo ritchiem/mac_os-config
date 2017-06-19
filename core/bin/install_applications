@@ -1,0 +1,30 @@
+#! /usr/bin/env bash
+
+# DESCRIPTION
+# Installs applications.
+
+# EXECUTION
+# Alfred
+#LITTLE_SNITCH
+install_dmg_installer "$LITTLE_SNITCH_APP_URL" "$LITTLE_SNITCH_VOLUME_NAME" "$LITTLE_SNITCH_INSTALLER_NAME" "$LITTLE_SNITCH_APP_NAME"
+
+#Block Block
+install_zip_install_cmd "$BLOCK_BLOCK_ZIP_URL" "$BLOCK_BLOCK_INSTALL_COMMAND" "$BLOCK_BLOCK_INSTALL_CHECK_URL"
+
+#Little Flocker
+install_dmg_pkg "$LITTLEFLOCKER_DMG_URL" "$LITTLEFLOCKER_DMG_VOLUME_NAME" "$LITTLEFLOCKER_PKG_INSTALLER_NAME" "$(get_install_path "$LITTLEFLOCKER_APP_NAME")"
+
+#Tunnelblick
+install_dmg_app "$TUNNELBLICK_APP_URL" "$TUNNELBLICK_VOLUME_NAME" "$TUNNELBLICK_APP_NAME"
+
+# Viscosity
+#install_dmg_app "$VISCOSITY_APP_URL" "$VISCOSITY_VOLUME_NAME" "$VISCOSITY_APP_NAME"
+
+# Google Chrome
+install_dmg_app "$CHROME_APP_URL" "$CHROME_VOLUME_NAME" "$CHROME_APP_NAME"
+
+# Google Chrome Canary
+install_dmg_app "$CHROME_CANARY_APP_URL" "$CHROME_CANARY_VOLUME_NAME" "$CHROME_CANARY_APP_NAME"
+
+# iStat Menus
+install_zip_app "$ISTATS_APP_URL" "$ISTATS_APP_NAME"

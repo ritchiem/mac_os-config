@@ -1,0 +1,82 @@
+#! /usr/bin/env bash
+
+# DESCRIPTION
+# Installs applications.
+
+# EXECUTION
+
+# Alfred
+install_dmg_app "$ALFRED_APP_URL" "$ALFRED_VOLUME_NAME" "$ALFRED_APP_NAME"
+
+# Carbon Copy Cloner
+install_zip_app "$CARBON_COPY_CLONER_APP_URL" "$CARBON_COPY_CLONER_APP_NAME"
+
+# Dash
+install_zip_app "$DASH_APP_URL" "$DASH_APP_NAME"
+
+# Dropbox
+install_dmg_app "$DROPBOX_APP_URL" "$DROPBOX_VOLUME_NAME" "$DROPBOX_APP_NAME"
+
+# Firefox
+install_dmg_app "$FIREFOX_APP_URL" "$FIREFOX_VOLUME_NAME" "$FIREFOX_APP_NAME"
+
+# ImageOptim
+install_tar_app "$IMAGE_OPTIM_APP_URL" "$IMAGE_OPTIM_APP_NAME" "-xjf"
+
+# Paw
+install_zip_app "$PAW_APP_URL" "$PAW_APP_NAME"
+
+# PSequel
+install_zip_app "$PSEQUEL_APP_URL" "$PSEQUEL_APP_NAME"
+
+# Tor Browser
+install_dmg_app "$TOR_BROWSER_APP_URL" "$TOR_BROWSER_VOLUME_NAME" "$TOR_BROWSER_APP_NAME"
+
+# Trailer
+install_zip_app "$TRAILER_APP_URL" "$TRAILER_APP_NAME"
+
+# Transmit
+install_zip_app "$TRANSMIT_APP_URL" "$TRANSMIT_APP_NAME"
+
+#TextMate
+install_tar_app "$TEXTMATE_APP_URL" "$TEXTMATE_APP_NAME" "xf"
+
+# IDEA
+install_dmg_app "$IDEA_APP_URL" "$IDEA_VOLUME_NAME" "$IDEA_APP_NAME"
+
+# PYCHARM
+install_dmg_app "$PYCHARM_APP_URL" "$PYCHARM_VOLUME_NAME" "$PYCHARM_APP_NAME"
+
+#Data Grip
+install_dmg_app "$DATAGRIP_APP_URL" "$DATAGRIP_VOLUME_NAME" "$DATAGRIP_APP_NAME"
+
+#PHPSTORM
+install_dmg_app "$PHPSTORM_APP_URL" "$PHPSTORM_VOLUME_NAME" "$PHPSTORM_APP_NAME"
+
+#WebSTORM
+install_dmg_app "$WEBSTORM_APP_URL" "$WEBSTORM_VOLUME_NAME" "$WEBSTORM_APP_NAME"
+
+#Docker
+#install_dmg_app "$DOCKER_APP_URL" "$DOCKER_VOLUME_NAME" "$DOCKER_APP_NAME"
+
+#Docker CE
+#install_dmg_app "$DOCKER_CE_APP_URL" "$DOCKER_CE_VOLUME_NAME" "$DOCKER_CE_APP_NAME"
+
+#Docker Beta
+install_dmg_app "$DOCKER_CE_BETA_APP_URL" "$DOCKER_CE_BETA_VOLUME_NAME" "$DOCKER_CE_BETA_APP_NAME"
+
+#Docker Toolbox
+install_raw_pkg "$DOCKER_TOOLBOX_PKG_URL" "$DOCKER_TOOLBAX_APP_NAME"
+
+#Chicken
+install_dmg_app "$CHICKEN_APP_URL" "$CHICKEN_VOLUME_NAME" "$CHICKEN_APP_NAME"
+
+#Github Desktop
+install_zip_app "$GITHUB_DESKTOP_APP_URL" "$GITHUB_DESKTOP_APP_NAME" "xf"
+
+# OmniGraffle - REQUIRES USER INPUT
+install_dmg_app "$OMNIGRAFFLE_APP_URL" "$OMNIGRAFFLE_VOLUME_NAME" "$OMNIGRAFFLE_APP_NAME"
+
+# PG Admin  - REQUIRES USER INPUT
+install_dmg_app "$PG_ADMIN_APP_URL" "$PG_ADMIN_VOLUME_NAME" "$PG_ADMIN_APP_NAME"
+

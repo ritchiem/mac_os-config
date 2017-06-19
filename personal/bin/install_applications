@@ -1,0 +1,39 @@
+#! /usr/bin/env bash
+
+# DESCRIPTION
+# Installs applications.
+
+# EXECUTION
+# HandBrake
+install_dmg_app "$HAND_BRAKE_APP_URL" "$HAND_BRAKE_VOLUME_NAME" "$HAND_BRAKE_APP_NAME"
+
+# Sonos
+install_dmg_app "$SONOS_APP_URL" "$SONOS_VOLUME_NAME" "$SONOS_APP_NAME"
+
+# VLC
+install_dmg_app "$VLC_APP_URL" "$VLC_VOLUME_NAME" "$VLC_APP_NAME"
+
+# DuetDisplay
+install_zip_app "$DUETDISPLAY_APP_URL" "$DUETDISPLAY_APP_NAME"
+
+#Transmission
+install_dmg_app "$TRANSMISSION_APP_URL" "$TRANSMISSION_VOLUME_NAME" "$TRANSMISSION_APP_NAME"
+
+#Boxer
+install_zip_app "$BOXER_APP_URL" "$BOXER_APP_NAME" "xf"
+
+#Audio Hijack
+install_zip_app "$AUDIO_HIJACK_APP_URL" "$AUDIO_HIJACK_APP_NAME" "xf"
+
+#GarageSale
+install_dmg_app "$GARAGE_SALE_APP_URL" "$GARAGE_SALE_VOLUME_NAME" "$GARAGE_SALE_APP_NAME"
+
+#Amazon Music
+install_dmg_installer "$AMAZON_MUSIC_APP_URL" "$AMAZON_MUSIC_VOLUME_NAME" "$AMAZON_MUSIC_INSTALLER_NAME" "$AMAZON_MUSIC_APP_NAME"
+
+#Graphic Converter 10
+install_dmg_app "$GRAPHIC_CONVERTER_APP_URL" "$GRAPHIC_CONVERTER_VOLUME_NAME" "$GRAPHIC_CONVERTER_APP_NAME"
+
+#Password Wallet
+install_dmg_app "$PASSWORD_WALLET_APP_URL" "$PASSWORD_WALLET_VOLUME_NAME" "$PASSWORD_WALLET_APP_NAME"
+
